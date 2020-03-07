@@ -1,0 +1,20 @@
+baseurl: ""
+url: "http://angelicsignature.com"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
