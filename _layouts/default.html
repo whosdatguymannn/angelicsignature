@@ -5,8 +5,12 @@
 
   <body>
 
+    {% if page.id == 'home' %} {% include intro.html %} {% endif %}
+
+    {% include header.html %}
+
   	{{ content }}
-    
+
   </body>
 
 </html>

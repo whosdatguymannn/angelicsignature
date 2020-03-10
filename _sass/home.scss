@@ -1,0 +1,27 @@
+#slideshow {
+  height: 100%;
+  overflow: hidden;
+  div {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.chevron-circle {
+  //background: pink;
+  position: relative;
+  text-align: center;
+  color: rgba(255,255,255, .8);
+  transition: all .2s ease-in-out;
+
+  > div {
+    margin-top: -100px;
+
+    i:hover {
+      cursor: pointer;
+      color: rgba(255,255,255, 1);
+    }
+  }
+}

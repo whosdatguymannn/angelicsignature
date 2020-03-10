@@ -1,4 +1,26 @@
 # Default settings
 title: Luxury Wedding & Event Stylist - Angelic Signature
 email: 'info@angelicsignature.com'
-description: "A&amp;A Party Poppers is a team of events and wedding venue decorations specialists based in London UK. We offer a wide range of services including: chair and table covers, centrepieces, backdrops, balloon decorations, costumes, kids' entertainment and much more."
+description: "Wedding &amp; Event Décor and Styling by Angelic Signature. We offer bespoke venue decoration in London. Book your free consultation today!
+"
+
+#Navigation
+mainNav:
+  - {name: Home, id: home, url: '/'}
+  - {name: Gallery, id: gallery, url: '/gallery/'}
+  - {name: About, id: about, url: '/about'}
+  - {name: Contact, id: contact, url: '/contact'}
+
+socialNav:
+  - name: Facebook
+    className: 'fa-facebook-square'
+    url: 'https://www.facebook.com/angelicsignature/'
+
+  - name: Instagram
+    className: 'fa-instagram"'
+    url: 'https://www.facebook.com/angelicsignature/'
+
+slideshow:
+  - {scr: "https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?cs=srgb&dl=man-and-woman-walking-of-body-of-water-1024993.jpg&fm=jpg"}
+  - {scr: "https://images.pexels.com/photos/169190/pexels-photo-169190.jpeg?cs=srgb&dl=table-with-plates-and-flowers-filed-neatly-selective-focus-169190.jpg&fm=jpg"}
+  - {scr: "https://images.pexels.com/photos/256737/pexels-photo-256737.jpeg?cs=srgb&dl=midsection-of-woman-making-heart-shape-with-hands-256737.jpg&fm=jpg"}

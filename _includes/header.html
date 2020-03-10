@@ -1,0 +1,35 @@
+<header id="mainHeader">
+  <div id="navContainer">
+    <div class="nav-inner">
+      <div>
+        <div class="nav-wrap">
+          <div>
+            <div id="logo">
+              <a class="logo" href="{{site.baseurl}}/">
+                <img src="{{site.baseurl}}/assets/img/AngelicSig_HALO.svg" alt="">
+              </a>
+            </div>
+            <nav id="navBar">
+              <div class="">
+                <ul class="main-nav">
+                  {% for member in site.data.default.mainNav %}
+                    <li {% if member.id == page.id %} class="current_page_item" {% endif %}>
+                      <a href="{{  member.url | prepend: site.baseurl }}">{{ member.name }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+                <ul class="socialUL">
+                  {% for member in site.data.default.socialNav %}
+                    <li>
+                      <a href="{{  member.url | prepend: site.baseurl }}" target="_blank" class="fa {{ member.className }} fa-fw"></a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
