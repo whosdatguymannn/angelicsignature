@@ -14,38 +14,34 @@
   z-index: 1030;
 }
 
+
 #navContainer .nav-inner {
   min-height: 70px;
-  width: 88%;
+  //width: 88%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 #navContainer .nav-inner>div {
-  display: table;
+  //display: table;
   vertical-align: middle;
-  width: 100%;
+  //width: 100%;
   height: 70px;
 }
 
-#navContainer .nav-wrap {
-  display: table-cell;
+#navContainer .nav-wrap, #navContainer .nav-wrap>div {
+  //display: table-cell;
   overflow: hidden;
-  width: 100%;
-  vertical-align: middle;
-}
-
-#navContainer .nav-wrap>div {
-  display: table;
-  vertical-align: middle;
-  overflow: hidden;
-  width: 100%;
+  //width: 100%;
+  //vertical-align: middle;
 }
 
 #logo {
-  width: 250px;
-  display: table-cell;
-  vertical-align: middle;
+  width: 150px;
+  margin: 18px 0 0 6%;
+  display: inline-block;
+  //display: table-cell;
+  //vertical-align: middle;
 
   img {
     width: 100%;
@@ -53,62 +49,189 @@
   }
 }
 
-#navBar {
-  display: table-cell;
-  vertical-align: middle;
+.menu-icon {
+  display: inline-block;
+  float: right;
+  margin: 18px 6% 0 0;
 }
-
-#navBar>div {
-  display: table;
+#navBar {
+  //display: block;
+  position: absolute;
+  top: 70px;
   width: 100%;
+  vertical-align: middle;
+  display: none;
+  background: #fff;
+
+  > div {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 #navBar>div>ul {
-  display: table-cell;
+  //display: table-cell;
   list-style: none;
   vertical-align: middle;
-}
 
-#navBar>div>ul > li {
-  display: inline-block;
-  margin: 2px;
+  > li {
+
+  }
 }
 
 #navBar .main-nav{
   text-align: center;
 }
 
-#navBar .main-nav a{
-  border: 1px solid transparent;
+#navBar .main-nav > li > a {
+  display: block;
+  padding: 16px 0;
+  //border: 0;
+  border-bottom: 1px solid transparent;
   font-size: 75%;
   line-height: 90%;
-  margin: 0;
-  padding: .5em .7em;
   letter-spacing: .08em;
   text-transform: uppercase;
-  transition: all .2s ease-in-out;
-}
+  border-color: rgba(51,51,51,.1);
 
-#navBar .main-nav > li.current_page_item > a,
-#navBar .main-nav > li.current_page_item > a:hover {
-	border-color: rgba(51,51,51,.1);
-}
-
-#navBar .main-nav > li > a:hover,
-#navBar .main-nav > li:hover > a {
-	border-color: rgba(51,51,51,.1);
+  &:hover {
+    //border: 0;
+  }
 }
 
 #navBar .socialUL {
-  width: 175px;
-  text-align: right;
+  //width: 100%;
+  padding: 8px 0;
+  text-align: center;
 
   li {
-    margin: 0 3px;
+    display: inline-block;
+    margin: 0 5px;
+  }
+}
 
-    a:hover {
-      transition: all .2s ease-in-out;
-      opacity: .5;
+/*
+@media screen and (max-width: 768px) {
+  #navContainer .nav-inner {
+    width: 100%;
+  }
+
+  #navContainer .nav-wrap > div, #navBar>div>ul, #navBar>div>ul > li {
+    display: block;
+  }
+
+  #logo {
+    width: 150px;
+    margin: 18px 0 0 6%;
+    display: block;
+  }
+
+  #navBar {
+    display: block;
+    position: absolute;
+    width: 100%;
+    background: #fff;
+
+    > div {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+
+
+
+
+}
+*/
+@media screen and (min-width: 1020px) {
+  #navContainer .nav-inner {
+    width: 88%;
+  }
+
+  #navContainer .nav-inner>div {
+    display: table;
+    width: 100%;
+  }
+
+  #navContainer .nav-wrap {
+    display: table-cell;
+    //overflow: hidden;
+    width: 100%;
+    vertical-align: middle;
+  }
+
+  #navContainer .nav-wrap>div {
+    display: table;
+    vertical-align: middle;
+    //overflow: hidden;
+    width: 100%;
+  }
+
+  #logo {
+    width: 250px;
+    //display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+
+    img {
+      width: 100%;
+      vertical-align: middle;
+    }
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  #navBar {
+    position: relative;
+    display: table-cell;
+    background: transparent;
+    top: 0;
+
+    > div {
+      display: table;
+      width: 100%;
+    }
+  }
+
+  #navBar>div>ul {
+    display: table-cell;
+    //list-style: none;
+    //vertical-align: middle;
+
+    > li {
+      display: inline-block;
+      margin: 2px;
+    }
+  }
+
+  #navBar .main-nav > li > a{
+
+    border: 1px solid transparent;
+    margin: 0;
+    padding: .5em .7em;
+    transition: all .2s ease-in-out;
+  }
+
+  #navBar .main-nav > li.current_page_item > a,
+  #navBar .main-nav > li.current_page_item > a:hover, #navBar .main-nav > li > a:hover,
+  #navBar .main-nav > li:hover > a {
+  	border-color: rgba(51,51,51,.1);
+  }
+
+  #navBar .socialUL {
+    width: 175px;
+    text-align: right;
+
+    li {
+      margin: 0 3px;
+
+      a:hover {
+        transition: all .2s ease-in-out;
+        opacity: .5;
+      }
     }
   }
 }

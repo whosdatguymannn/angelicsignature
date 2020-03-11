@@ -1,6 +1,10 @@
 $(document).ready(function () {
   $('#intro').delay(2000).fadeOut(3000);
 
+  $('.menu-icon').click(function () {
+    $('#navBar').toggle(500);
+  });
+
   $('#slideshow .slick').slick({
     dots: false,
     infinite: true,
